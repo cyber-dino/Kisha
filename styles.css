@@ -1,0 +1,129 @@
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF0F5; /* Light pink background */
+   
+  
+    color: #333;
+}
+.background-image-opacity {
+    position: relative;
+    width: 100%; /* or your desired width */
+    height: 400px; /* or your desired height */
+    background-color: transparent;
+  }
+  
+  .background-image-opacity::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('6.jpg'); /* Replace 'your-image-url.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust opacity between 0 (fully transparent) to 1 (fully opaque) */
+    z-index: -1;
+  }
+  
+/* Header styles */
+header {
+    background-color: #000; /* Black background */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFF; /* White text color */
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #FF69B4; /* Hot pink text color */
+}
+
+.sticker-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sticker {
+    margin: 0 10px;
+}
+
+.sticker img {
+    max-width: 200px; /* Set a fixed maximum width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and fill the specified dimensions */
+}
+
+.sticker h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.sticker button {
+    background-color: #FFD700; /* Yellow background */
+    color: #000; /* Black text color */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.quality-sticker {
+    position: fixed;
+    max-width: 20px;
+    max-height: 20px;
+    top: 20px;
+    right: 20px;
+}
+
+.shipping-sticker {
+    position: fixed;
+    max-width: 20px;
+    max-height: 20px;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000; /* Black background */
+    padding: 10px;
+    text-align: center;
+}
+
+footer button {
+    background-color: #FF69B4; /* Hot pink background */
+    color: #FFF; /* White text color */
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
